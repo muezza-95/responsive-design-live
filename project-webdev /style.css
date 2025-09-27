@@ -1,0 +1,421 @@
+html {
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #dbeafe;
+  font-family: Inter, Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #434242;
+  margin: 0;
+  padding: 0;
+
+}
+
+h1 {
+  font-family: League Spartan, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #190d37;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: League Spartan, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #190d37;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.big-text {
+  color: #331e6a;
+  font-family: Poppins, Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#hero-section {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#hero-left-section {
+  width: 50%;
+  padding: 32px 20px 32px 20px;
+}
+
+#contact-info {
+  font-family: Inter, Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: black;
+}
+
+.sub-heading {
+  margin-top: 50px;
+  font-family: Inter, Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+#contact {
+  background-color: #2f2f2f;
+  color: white;
+  height: 44px;
+  width: 138px;
+  border-radius: 5px;
+  font-family: Inter, Arial;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-top: 20px;
+}
+
+
+#hero-right-section {
+  width: 50%;
+}
+
+#hero-image {
+  border-bottom-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  max-width: 600px;
+  min-height: 450px;
+}
+
+
+
+#what-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 10px;
+}
+
+.upper-section {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+.title {
+  font-family: Poppins, Arial;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.body-text {
+  color: #331e6a;
+  font-family: Poppins, Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+#box-title {
+  font-family: Poppins, Arial;
+  font-weight: 600;
+  font-size: 18px;
+  text-align:center;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
+}
+
+#box-text {
+  font-family: Inter, Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #331e6a;
+}
+
+.lower-section {
+  display: flex;
+}
+
+.container-box {
+  width: 33.33%;
+}
+
+.container-cards-1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.container-cards-2 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+.container-cards-3 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
+#project-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.project-upper-section {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+#project-container {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.project-thumbnail-1 {
+  display: flex;
+  background-color: #19ACFF;
+  min-width: 160px;
+  max-height: 160px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.project-thumbnail-2 {
+  display: flex;
+  background-color: #d6ec0c;
+  min-width: 160px;
+  max-height: 160px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+
+}
+
+.project-thumbnail-3 {
+  display: flex;
+  background-color: #fe5118;
+  min-width: 160px;
+  max-height: 160px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#project-info {
+  padding-left: 20px;
+}
+
+.project-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+}
+
+.project-content {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 24px;
+  color: #331e6a;
+  margin-top: 10px;
+}
+
+.project-link {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  color: #6A87A3;
+  margin-top: 7px;
+}
+
+
+#pricing-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+.pricing-upper-section {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 700px;
+}
+
+
+#pricing-box-section {
+  display: flex;
+}
+
+.pricing-box {
+  width: 33.33%;
+}
+
+.pricing-cards {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.pricing-cards-2 {
+  background-color: #ffd748;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.pricing-cards-2 .service-name {
+  color: black;
+}
+
+.pricing-cards-2 .service-feature {
+  color: #000000bf;
+}
+
+.pricing-cards-2 .service-info {
+  color: #00000080;
+}
+
+.pricing-cards-2 .price-per {
+  color: #00000080;
+}
+
+.pricing-cards-2 .service-cta {
+  background-color: black;
+  color: white;
+}
+
+.pricing-cards-2 .service-cta:hover {
+  background-color: white;
+  color: black;
+}
+
+.pricing-cards-3 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 0 10px;
+}
+
+.service-name {
+  font-size: Poppins, Arial;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #2858ff;
+}
+
+.service-amount {
+  font-family: Poppins, Arial;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+  color: black;
+}
+
+.price-per {
+  font-family: Poppins, Arial;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8a8a8a;
+}
+
+.service-info {
+  font-family: Poppins, Arial;
+  font-size: 14px;
+  font-weight: 400;
+  color: #484848;
+}
+
+.service-feature {
+  padding: 0;
+  list-style-type: none;
+
+}
+
+.service-feature li {
+  margin-bottom: 8px;
+  font-family: Poppins, Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color-scheme: #666666;
+}
+
+.service-cta {
+  width: 100%;
+  padding: 12px;
+  border-style: solid 2px;
+  border-color: #121315;
+  background-color: white;
+  border-radius: 5px;
+  color: #2f2f2f;
+  font-family: Inter, Arial;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+.service-cta:hover {
+  background-color: #121315;
+  color: white;
+  cursor: pointer;
+}
+
+#footer {
+  width: 100%;
+  background-color: #121315;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  font-family: Poppins, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
