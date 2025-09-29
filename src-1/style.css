@@ -1,3 +1,14 @@
+/*
+
+/* Base styles (extra small devices -mobile) */
+/*CSS rules*/
+
+
+
+/*tablet device*/
+@media screen and (min-width:)
+
+
 html {
   font-size: 16px;
   overflow-x: hidden;
@@ -425,3 +436,5 @@ h2 {
   font-weight: 500;
   line-height: 18px;
 }
+
+*/   
