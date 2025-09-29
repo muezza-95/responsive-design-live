@@ -1,14 +1,203 @@
-/*
-
 /* Base styles (extra small devices -mobile) */
-/*CSS rules*/
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: #dbeafe;
+  font-family: Inter, Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  color: #434242;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: League Spartan, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 40px;
+  color: #190d37;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-family: League Spartan, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #190d37;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.big-text {
+  color: #331e6a;
+  font-family: Poppins, Arial;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+#hero-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#hero-left-section {
+  width: 100%;
+  padding: 32px 20px 32px 20px;
+}
+
+#contact-info {
+  font-family: Inter, Arial;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: black;
+}
+
+.sub-heading {
+  margin-top: 50px;
+  font-family: Inter, Arial;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+#contact {
+  background-color: #2f2f2f;
+  color: white;
+  height: 44px;
+  width: 138px;
+  border-radius: 5px;
+  font-family: Inter, Arial;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  margin-top: 20px;
+}
+
+#hero-right-section {
+  width: 100%;
+}
+
+#hero-image {
+  width: 440px;
+  min-height: 200px;
+}
+
+#what-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+#what-container {
+ 
+}
+.upper-section {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-family: Poppins, Arial;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+
+.body-text {
+  color: #331e6a;
+  font-family: Poppins, Arial;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+}
+
+#box-title {
+  font-family: Poppins, Arial;
+  font-weight: 600;
+  font-size: 18px;
+  text-align:center;
+  text-transform: uppercase;
+  color: black;
+  margin-bottom: 15px;
+}
+
+#box-text {
+  font-family: Inter, Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #331e6a;
+}
+
+.lower-section {
+  
+}
+
+.container-box {
+  width: 100%;
+}
+
+.container-cards-1 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.container-cards-2 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
+.container-cards-3 {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px 10px;
+}
+
 
 
 
 /*tablet device*/
-@media screen and (min-width:)
+@media screen and (min-width: 576px) {
 
+}
 
+/*laptop device*/
+@media screen and (min-width: 768px) {
+  
+}
+
+/*large desktop device*/
+@media screen and (min-width: 992px) {
+  
+}
+
+/*extra large desktop device*/
+@media screen and (min-width: 1200px) {
+  
+}
+
+/*
 html {
   font-size: 16px;
   overflow-x: hidden;
@@ -23,14 +212,9 @@ body {
   color: #434242;
   margin: 0;
   padding: 0;
-
 }
 
-@media screen and (min-width:768px) {
-  body{
-    background-color: lightblue;
-  }
-  }
+
 
 h1 {
   font-family: League Spartan, sans-serif;
@@ -113,7 +297,6 @@ h2 {
   max-width: 600px;
   min-height: 450px;
 }
-
 
 
 #what-section {
@@ -435,6 +618,5 @@ h2 {
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
-}
-
-*/   
+} 
+*/
