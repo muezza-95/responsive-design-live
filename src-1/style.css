@@ -1,6 +1,8 @@
 /* Base styles (extra small devices -mobile) */
 
-html {
+@media screen and (min-width: 320px) {
+
+  html {
   font-size: 14px;
   margin: 0;
   padding: 0;
@@ -47,7 +49,17 @@ h2 {
 
 #hero-section {
   width: 100%;
-  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hero-container{
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #hero-left-section {
@@ -92,22 +104,36 @@ h2 {
 }
 
 #hero-image {
-  width: 100%;
+  max-width: 100%;
   min-height: 200px;
   margin-top: 20px;
   border-radius: 10px;
 }
 
 #what-section {
+  margin: 0 auto;
   width: 100%;
-  margin: 0 20px;
   padding-top: 50px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+#what-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+}
 .upper-section {
-  justify-content: center;
   margin-bottom: 30px;
+}
+
+.lower-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -149,45 +175,61 @@ h2 {
 
 
 .container-box {
-  width: 100%;
-  padding: 5px 0;
+  max-width: 360px;
+  padding: 0 10px;
+  margin-bottom: 20px;
 }
 
 .container-cards-1 {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  margin: 10px 10px;
+  
 }
 
 .container-cards-2 {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  margin: 10px 10px;
+  
 }
 
 .container-cards-3 {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  margin: 10px 10px;
 }
 
 #project-section {
+  margin: 0 auto;
   width: 100%;
-  margin: 0 20px;
   padding-top: 50px;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+#project-cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .project-upper-section {
   margin-bottom: 30px;
 }
 
+.project-lower-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #project-container {
   display: flex;
+  flex-direction: row;
   margin-bottom: 20px;
 }
 
@@ -268,16 +310,31 @@ h2 {
 }
 
 #pricing-section {
+  margin: 0 auto;
   width: 100%;
-  margin: 0 20px;
   padding-top: 50px;
   padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#pricing-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .pricing-upper-section {
   margin-bottom: 30px;
 }
 
+#pricing-box-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .pricing-box {
   width: 100%;
@@ -288,14 +345,12 @@ h2 {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  margin: 0 10px;
 }
 
 .pricing-cards-2 {
   background-color: #ffd748;
   border-radius: 10px;
   padding: 20px;
-  margin: 0 10px;
 }
 
 .pricing-cards-2 .service-name {
@@ -407,6 +462,9 @@ h2 {
   font-size: 12px;
   font-weight: 500;
   line-height: 18px;
+  margin: 0 auto;
+}
+
 }
 
 /*--------------------------------------------*/
