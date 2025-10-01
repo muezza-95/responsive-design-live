@@ -2,6 +2,8 @@
 
 html {
   font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -11,8 +13,6 @@ body {
   font-weight: 400;
   line-height: 24px;
   color: #434242;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -61,6 +61,9 @@ h2 {
   line-height: 14px;
   color: black;
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .sub-heading {
@@ -411,9 +414,12 @@ h2 {
 /*tablet device*/
 @media screen and (min-width: 576px) {
 
+
   html {
     font-size: 16px;
-    
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
   }
 
   body {
@@ -455,18 +461,27 @@ h2 {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 32px;
+    overflow-wrap: break-word;
   }
 
   #hero-section {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0;
   }
 
-  #hero-left-section {
-    width: 100%;
+  #hero-container {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
   }
+
 
   #contact-info {
     font-family: Inter, Arial;
@@ -475,6 +490,11 @@ h2 {
     line-height: 14px;
     color: black;
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 20px;
+
   }
 
   .sub-heading {
@@ -498,26 +518,34 @@ h2 {
     margin-top: 20px;
   }
 
-  #hero-right-section {
-    width: 100%;
-  }
-
   #hero-image {
-    width: 100%;
-    min-height: 200px;
+    display: block;
+    max-width: 100%;
+    min-height: auto;
     margin-top: 20px;
     border-radius: 10px;
   }
 
   #what-section {
-    width: 100%;
-    margin: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #what-container {
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+
   }
 
   .upper-section {
-    width: 100%;
     margin-bottom: 30px;
   }
 
@@ -565,7 +593,7 @@ h2 {
   }
 
   .container-box {
-    width: 75%;
+    max-width: 60%;
     padding: 5px 0;
   }
 
@@ -590,13 +618,22 @@ h2 {
     margin: 10px 10px;
   }
 
-  
-
   #project-section {
-    width: 100%;
-    margin: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #project-cont {
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   .project-upper-section {
@@ -610,7 +647,7 @@ h2 {
   }
 
   #project-container {
-    width: 90%;
+    max-width: 100%;
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
@@ -692,627 +729,663 @@ h2 {
     margin-top: 7px;
   }
 
-  
+
   #pricing-section {
-    width: 100%;
-    margin: 0 20px;
+    max-width: 100%;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
   }
+
+
+  #pricing-container {
+    max-width: 100%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
 
   .pricing-upper-section {
     margin-bottom: 30px;
   }
 
   #pricing-box-section {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   .pricing-box {
-    width: 75%;
+    max-width: 60%;
     margin-top: 20px;
+  }
 
+  .pricing-cards {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+  }
 
-    .pricing-cards {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 10px;
-    }
+  .pricing-cards-2 {
+    background-color: #ffd748;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+  }
 
-    .pricing-cards-2 {
-      background-color: #ffd748;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 10px;
-    }
+  .pricing-cards-2 .service-name {
+    color: black;
+  }
 
-    .pricing-cards-2 .service-name {
-      color: black;
-    }
+  .pricing-cards-2 .service-feature {
+    color: #000000bf;
+  }
 
-    .pricing-cards-2 .service-feature {
-      color: #000000bf;
-    }
+  .pricing-cards-2 .service-info {
+    color: #00000080;
+  }
 
-    .pricing-cards-2 .service-info {
-      color: #00000080;
-    }
+  .pricing-cards-2 .price-per {
+    color: #00000080;
+  }
 
-    .pricing-cards-2 .price-per {
-      color: #00000080;
-    }
+  .pricing-cards-2 .service-cta {
+    background-color: black;
+    color: white;
+  }
 
-    .pricing-cards-2 .service-cta {
-      background-color: black;
-      color: white;
-    }
+  .pricing-cards-2 .service-cta:hover {
+    background-color: white;
+    color: black;
+  }
 
-    .pricing-cards-2 .service-cta:hover {
-      background-color: white;
-      color: black;
-    }
+  .pricing-cards-3 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+  }
 
-    .pricing-cards-3 {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 10px;
-    }
+  .service-name {
+    font-size: Poppins, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2858ff;
+  }
 
-    .service-name {
-      font-size: Poppins, Arial;
-      font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase;
-      color: #2858ff;
-    }
+  .service-amount {
+    font-family: Poppins, Arial;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 54px;
+    color: black;
+  }
 
-    .service-amount {
-      font-family: Poppins, Arial;
-      font-weight: 700;
-      font-size: 2rem;
-      line-height: 54px;
-      color: black;
-    }
+  .price-per {
+    font-family: Poppins, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a8a8a;
+  }
 
-    .price-per {
-      font-family: Poppins, Arial;
-      font-size: 14px;
-      font-weight: 400;
-      color: #8a8a8a;
-    }
+  .service-info {
+    font-family: Poppins, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #484848;
+  }
 
-    .service-info {
-      font-family: Poppins, Arial;
-      font-size: 14px;
-      font-weight: 400;
-      color: #484848;
-    }
-
-    .service-feature {
-      padding: 0;
-      list-style-type: none;
-
-    }
-
-    .service-feature li {
-      margin-bottom: 8px;
-      font-family: Poppins, Arial;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      color-scheme: #666666;
-    }
-
-    .service-cta {
-      width: 100%;
-      padding: 12px;
-      border-style: solid 2px;
-      border-color: #121315;
-      background-color: white;
-      border-radius: 5px;
-      color: #2f2f2f;
-      font-family: Inter, Arial;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-    }
-
-    .service-cta:hover {
-      background-color: #121315;
-      color: white;
-      cursor: pointer;
-    }
-
-
-    #footer {
-      width: 100%;
-      background-color: #121315;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
-      font-family: Poppins, Arial;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 18px;
-    }
+  .service-feature {
+    padding: 0;
+    list-style-type: none;
 
   }
+
+  .service-feature li {
+    margin-bottom: 8px;
+    font-family: Poppins, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color-scheme: #666666;
+  }
+
+  .service-cta {
+    width: 100%;
+    padding: 12px;
+    border-style: solid 2px;
+    border-color: #121315;
+    background-color: white;
+    border-radius: 5px;
+    color: #2f2f2f;
+    font-family: Inter, Arial;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  .service-cta:hover {
+    background-color: #121315;
+    color: white;
+    cursor: pointer;
+  }
+
+  #footer {
+    max-width: 100%;
+    background-color: #121315;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-family: Poppins, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+
+}
+
 
 /*--------------------------------------------*/
 
 
-  /*laptop device*/
-  @media screen and (min-width: 768px) {
-
-    html {
-      font-size: 16px;
-      
-    }
-
-    body {
-      background-color: #dbeafe;
-      font-family: Inter, Arial;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 24px;
-      color: #434242;
-      margin: 0;
-      padding: 0;
-    }
-
-    h1 {
-      font-family: League Spartan, sans-serif;
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 40px;
-      color: #190d37;
-      margin-top: 20px;
-      margin-bottom: 15px;
-    }
-
-    h2 {
-      font-family: League Spartan, sans-serif;
-      font-size: 2rem;
-      font-weight: 700;
-      line-height: 40px;
-      color: #190d37;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      text-transform: capitalize;
-    }
-
-    .big-text {
-      color: #331e6a;
-      font-family: Poppins, Arial;
-      font-size: 1.1rem;
-      font-weight: 400;
-      line-height: 32px;
-    }
-
-    #hero-section {
-      width: 100%;
-      padding: 0;
-      margin: 0 10px;
-    }
-
-    #hero-container {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-    }
-
-    #hero-left-section {
-      width: 50%;
-      padding: 32px 20px 32px 20px;
-    }
-
-    #contact-info {
-      font-family: Inter, Arial;
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 14px;
-      color: black;
-      margin-top: 0;
-    }
-
-    .sub-heading {
-      margin-top: 50px;
-      font-family: Inter, Arial;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 14px;
-    }
-
-    #contact {
-      background-color: #2f2f2f;
-      color: white;
-      height: 44px;
-      width: 138px;
-      border-radius: 5px;
-      font-family: Inter, Arial;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-    }
-
-    #hero-right-section {
-      width: 50%;
-    }
-
-    #hero-image {
-      margin-top: 120px;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-
-    #what-section {
-      width: 100%;
-      margin-top: 50px;
-      margin-bottom: 50px;
-      margin: 0 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    #what-container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .upper-section {
-      margin-bottom: 30px;
-      width: 80%;
-    }
-
-    .title {
-      font-family: Poppins, Arial;
-      font-weight: 600;
-      font-size: 12px;
-      text-align: center;
-      text-transform: uppercase;
-      color: blue;
-    }
-
-    .body-text {
-      color: #331e6a;
-      font-family: Poppins, Arial;
-      font-size: 1.1rem;
-      font-weight: 400;
-      line-height: 32px;
-      text-align: center;
-    }
-
-    #box-title {
-      font-family: Poppins, Arial;
-      font-weight: 600;
-      font-size: 18px;
-      text-align: center;
-      text-transform: uppercase;
-      color: black;
-      margin-bottom: 15px;
-    }
-
-    #box-text {
-      font-family: Inter, Arial;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: center;
-      color: #331e6a;
-    }
-
-    .lower-section {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-    }
-
-    .container-box {
-      width: 33.33%;
-    }
-
-    .container-cards-1 {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 0 10px;
-    }
-
-    .container-cards-2 {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 0 10px;
-    }
-
-    .container-cards-3 {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      margin: 0 10px;
-    }
-
-    #project-section {
-      width: 100%;
-      margin: 50px 10px 0 10px;
-      padding: 0;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-    #project-cont {
-      width: 95%;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .project-upper-section {
-      margin-bottom: 30px;
-      width: 100%;
-    }
-
-    .project-lower-section{
-      width: 100%;
-    }
-
-    #project-container {
-      width: 100%;
-      display: flex;
-      margin-bottom: 30px;
-    }
-
-    .project-thumbnail-1 {
-      display: flex;
-      background-color: #19ACFF;
-      min-width: 140px;
-      max-height: 140px;
-      font-family: Poppins;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 2.5rem;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-    }
-
-    .project-thumbnail-2 {
-      display: flex;
-      background-color: #d6ec0c;
-      min-width: 140px;
-      max-height: 140px;
-      font-family: Poppins;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 2.5rem;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-
-    }
-
-    .project-thumbnail-3 {
-      display: flex;
-      background-color: #fe5118;
-      min-width: 140px;
-      max-height: 140px;
-      font-family: Poppins;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 2.5rem;
-      color: white;
-      align-items: center;
-      justify-content: center;
-      border-radius: 10px;
-    }
-
-    #project-info {
-      padding-left: 40px;
-    }
-
-    .project-title {
-      font-family: Poppins;
-      font-weight: 700;
-      font-style: Bold;
-      font-size: 18px;
-    }
-
-    .project-content {
-      font-family: Inter;
-      font-weight: 400;
-      font-style: Regular;
-      font-size: 16px;
-      line-height: 24px;
-      color: #331e6a;
-      margin-top: 10px;
-    }
-
-    .project-link {
-      font-family: Inter;
-      font-weight: 500;
-      font-style: Medium;
-      font-size: 14px;
-      color: #6A87A3;
-      margin-top: 7px;
-    }
-
-
-    #pricing-section {
-      width: 100%;
-      margin-top: 50px 10px 50px 10px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    #pricing-container{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .pricing-upper-section {
-      margin-bottom: 30px;
-      width: 80%;
-    }
-
-
-    #pricing-box-section {
-      display: flex;
-      flex-direction: row;
-    }
-
-    .pricing-box {
-      width: 33.33%;
-    }
-
-    .pricing-cards {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 10px;
-    }
-
-    .pricing-cards-2 {
-      background-color: #ffd748;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 10px;
-    }
-
-    .pricing-cards-2 .service-name {
-      color: black;
-    }
-
-    .pricing-cards-2 .service-feature {
-      color: #000000bf;
-    }
-
-    .pricing-cards-2 .service-info {
-      color: #00000080;
-    }
-
-    .pricing-cards-2 .price-per {
-      color: #00000080;
-    }
-
-    .pricing-cards-2 .service-cta {
-      background-color: black;
-      color: white;
-    }
-
-    .pricing-cards-2 .service-cta:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .pricing-cards-3 {
-      background-color: white;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 10px;
-    }
-
-    .service-name {
-      font-size: Poppins, Arial;
-      font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase;
-      color: #2858ff;
-    }
-
-    .service-amount {
-      font-family: Poppins, Arial;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 54px;
-      color: black;
-    }
-
-    .price-per {
-      font-family: Poppins, Arial;
-      font-size: 14px;
-      font-weight: 400;
-      color: #8a8a8a;
-    }
-
-    .service-info {
-      font-family: Poppins, Arial;
-      font-size: 14px;
-      font-weight: 400;
-      color: #484848;
-    }
-
-    .service-feature {
-      padding: 0;
-      list-style-type: none;
-
-    }
-
-    .service-feature li {
-      margin-bottom: 8px;
-      font-family: Poppins, Arial;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px;
-      color-scheme: #666666;
-    }
-
-    .service-cta {
-      width: 100%;
-      padding: 12px;
-      border-style: solid 2px;
-      border-color: #121315;
-      background-color: white;
-      border-radius: 5px;
-      color: #2f2f2f;
-      font-family: Inter, Arial;
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-    }
-
-    .service-cta:hover {
-      background-color: #121315;
-      color: white;
-      cursor: pointer;
-    }
-
-    #footer {
-      width: 100%;
-      background-color: #121315;
-      color: #ffffff;
-      text-align: center;
-      padding: 20px;
-      margin-top: 50px;
-      font-family: Poppins, Arial;
-      font-size: 12px;
-      font-weight: 500;
-      line-height: 18px;
-    }
+/*laptop device*/
+@media screen and (min-width: 768px) {
+
+  html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
   }
 
-  /*--------------------------------------------*/
+  body {
+    background-color: #dbeafe;
+    font-family: Inter, Arial;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #434242;
+    margin: 0;
+    padding: 0;
+  }
 
-  /*large desktop device*/
-  @media screen and (min-width: 992px) {
+  h1 {
+    font-family: League Spartan, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 40px;
+    color: #190d37;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 
-    html {
-      font-size: 18px;
-      
+  h2 {
+    font-family: League Spartan, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+    color: #190d37;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+
+  .big-text {
+    color: #331e6a;
+    font-family: Poppins, Arial;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 32px;
+  }
+
+  #hero-section {
+    max-width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #hero-container {
+    max-width: 97%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #hero-left-section {
+    width: 50%;
+    padding: 32px 20px 32px 20px;
+    margin: 0;
+  }
+
+  #contact-info {
+    font-family: Inter, Arial;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    color: black;
+    margin-top: 0;
+  }
+
+  .sub-heading {
+    margin-top: 50px;
+    font-family: Inter, Arial;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 14px;
+  }
+
+  #contact {
+    background-color: #2f2f2f;
+    color: white;
+    height: 44px;
+    width: 138px;
+    border-radius: 5px;
+    font-family: Inter, Arial;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  #hero-right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 120px;
+  }
+
+  #hero-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 0;
+  }
+
+
+  #what-section {
+    max-width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #what-container {
+    max-width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .upper-section {
+    margin-bottom: 30px;
+    max-width: 85%;
+  }
+
+  .title {
+    font-family: Poppins, Arial;
+    font-weight: 600;
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: blue;
+  }
+
+  .body-text {
+    color: #331e6a;
+    font-family: Poppins, Arial;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  #box-title {
+    font-family: Poppins, Arial;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+  #box-text {
+    font-family: Inter, Arial;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #331e6a;
+  }
+
+  .lower-section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+
+  }
+
+  .container-box {
+    max-width: 33.33%;
+    flex: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+  }
+
+  .container-cards-1 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  .container-cards-2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  .container-cards-3 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+  }
+
+  #project-section {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #project-cont {
+    max-width: 97%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-upper-section {
+    margin-bottom: 30px;
+    max-width: 85%;
+  }
+
+  .project-lower-section {
+    width: 100%;
+  }
+
+  #project-container {
+    width: 100%;
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .project-thumbnail-1 {
+    display: flex;
+    background-color: #19ACFF;
+    min-width: 140px;
+    max-height: 140px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 2.5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .project-thumbnail-2 {
+    display: flex;
+    background-color: #d6ec0c;
+    min-width: 140px;
+    max-height: 140px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 2.5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+  }
+
+  .project-thumbnail-3 {
+    display: flex;
+    background-color: #fe5118;
+    min-width: 140px;
+    max-height: 140px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 2.5rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  #project-info {
+    padding-left: 20px;
+  }
+
+  .project-title {
+    font-family: Poppins;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+  }
+
+  .project-content {
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: #331e6a;
+    margin-top: 10px;
+  }
+
+  .project-link {
+    font-family: Inter;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    color: #6A87A3;
+    margin-top: 7px;
+  }
+
+
+  #pricing-section {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #pricing-container {
+    max-width: 97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-upper-section {
+    margin-bottom: 30px;
+    width: 85%;
+  }
+
+
+  #pricing-box-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pricing-box {
+    width: 33.33%;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .pricing-cards {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .pricing-cards-2 {
+    background-color: #ffd748;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 ;
+  }
+
+  .pricing-cards-2 .service-name {
+    color: black;
+  }
+
+  .pricing-cards-2 .service-feature {
+    color: #000000bf;
+  }
+
+  .pricing-cards-2 .service-info {
+    color: #00000080;
+  }
+
+  .pricing-cards-2 .price-per {
+    color: #00000080;
+  }
+
+  .pricing-cards-2 .service-cta {
+    background-color: black;
+    color: white;
+  }
+
+  .pricing-cards-2 .service-cta:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .pricing-cards-3 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .service-name {
+    font-size: Poppins, Arial;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #2858ff;
+  }
+
+  .service-amount {
+    font-family: Poppins, Arial;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: black;
+  }
+
+  .price-per {
+    font-family: Poppins, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #8a8a8a;
+  }
+
+  .service-info {
+    font-family: Poppins, Arial;
+    font-size: 14px;
+    font-weight: 400;
+    color: #484848;
+  }
+
+  .service-feature {
+    padding: 0;
+    list-style-type: none;
+
+  }
+
+  .service-feature li {
+    margin-bottom: 8px;
+    font-family: Poppins, Arial;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color-scheme: #666666;
+  }
+
+  .service-cta {
+    width: 100%;
+    padding: 12px;
+    border-style: solid 2px;
+    border-color: #121315;
+    background-color: white;
+    border-radius: 5px;
+    color: #2f2f2f;
+    font-family: Inter, Arial;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  .service-cta:hover {
+    background-color: #121315;
+    color: white;
+    cursor: pointer;
+  }
+
+  #footer {
+    width: 100%;
+    background-color: #121315;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-family: Poppins, Arial;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 0 auto;
+  }
+}
+
+/*--------------------------------------------*/
+
+/*large desktop device*/
+@media screen and (min-width: 992px) {
+
+  html {
+    font-size: 18px;
+
 
     body {
       background-color: #dbeafe;
@@ -1412,7 +1485,7 @@ h2 {
       border-radius: 10px;
     }
 
-     #what-section {
+    #what-section {
       width: 100%;
       margin-top: 50px;
       margin-bottom: 50px;
@@ -1523,7 +1596,7 @@ h2 {
       max-width: 80%;
     }
 
-    .project-lower-section{
+    .project-lower-section {
       width: 100%;
     }
 
@@ -1618,7 +1691,7 @@ h2 {
       align-items: center;
     }
 
-    #pricing-container{
+    #pricing-container {
       max-width: 98%;
       display: flex;
       flex-direction: column;
