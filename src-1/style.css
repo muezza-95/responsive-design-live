@@ -1,11 +1,14 @@
 /* Base styles (extra small devices -mobile) */
 
+* {
+  box-sizing: border-box;
+}
 
-
-  html {
+html {
   font-size: 14px;
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -18,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
 }
-  
+
 
 h1 {
   font-family: League Spartan, sans-serif;
@@ -52,18 +55,17 @@ h2 {
 
 #hero-section {
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#hero-container{
+#hero-container {
   max-width: 100%;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 20px;
 }
 
 #hero-left-section {
@@ -115,7 +117,6 @@ h2 {
 }
 
 #what-section {
-  margin: 0 auto;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -124,19 +125,21 @@ h2 {
   align-items: center;
 }
 
-#what-container{
+#what-container {
+  padding: 0 20px;
   max-width: 100%;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .upper-section {
   max-width: 100%;
   margin-bottom: 30px;
 }
 
-.lower-section{
+.lower-section {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -191,14 +194,14 @@ h2 {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  
+
 }
 
 .container-cards-2 {
   background-color: white;
   padding: 30px;
   border-radius: 10px;
-  
+
 }
 
 .container-cards-3 {
@@ -208,7 +211,6 @@ h2 {
 }
 
 #project-section {
-  margin: 0 auto;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 20px;
@@ -217,13 +219,13 @@ h2 {
   align-items: center;
 }
 
-#project-cont{
+#project-cont {
   max-width: 100%;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+
 }
 
 .project-upper-section {
@@ -231,7 +233,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-.project-lower-section{
+.project-lower-section {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -278,8 +280,8 @@ h2 {
 .project-thumbnail-3 {
   display: flex;
   background-color: #fe5118;
-  min-width: 120px;
-  max-height: 120px;
+  min-width: 100px;
+  max-height: 100px;
   font-family: Poppins;
   font-weight: 700;
   font-style: Bold;
@@ -321,7 +323,6 @@ h2 {
 }
 
 #pricing-section {
-  margin: 0 auto;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -330,7 +331,7 @@ h2 {
   align-items: center;
 }
 
-#pricing-container{
+#pricing-container {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -343,7 +344,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-#pricing-box-section{
+#pricing-box-section {
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -397,7 +398,7 @@ h2 {
   background-color: white;
   border-radius: 10px;
   padding: 20px;
-  
+
 }
 
 .service-name {
@@ -485,12 +486,14 @@ h2 {
 /*tablet device*/
 @media screen and (min-width: 576px) {
 
+  * {
+    box-sizing: border-box;
+  }
 
   html {
     font-size: 16px;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
   }
 
   body {
@@ -550,7 +553,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 20px;
   }
 
 
@@ -610,7 +613,7 @@ h2 {
 
   #what-container {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
 
@@ -702,7 +705,7 @@ h2 {
 
   #project-cont {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
   }
@@ -815,7 +818,7 @@ h2 {
 
   #pricing-container {
     max-width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
   }
@@ -973,6 +976,10 @@ h2 {
 /*laptop device*/
 @media screen and (min-width: 768px) {
 
+  * {
+    box-sizing: border-box;
+  }
+
   html {
     font-size: 16px;
     margin: 0;
@@ -1022,22 +1029,23 @@ h2 {
 
   #hero-section {
     max-width: 100%;
-    padding: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
 
   #hero-container {
-    max-width: 97%;
+    max-width: 100%;
+    padding: 0 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
+
   }
 
   #hero-left-section {
     width: 50%;
-    padding: 32px 20px 32px 20px;
+    padding: 32px 20px 32px 0;
     margin: 0;
   }
 
@@ -1075,7 +1083,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-self: center;
-    margin-bottom: 120px;
+    
   }
 
   #hero-image {
@@ -1097,7 +1105,8 @@ h2 {
   }
 
   #what-container {
-    max-width: 97%;
+    max-width: 100%;
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1159,7 +1168,7 @@ h2 {
     flex: 1;
     margin-right: 5px;
     margin-left: 5px;
-    
+
   }
 
   .container-cards-1 {
@@ -1193,7 +1202,7 @@ h2 {
   }
 
   #project-cont {
-    max-width: 97%;
+    max-width: 100%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -1299,7 +1308,7 @@ h2 {
   }
 
   #pricing-container {
-    max-width: 97%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1333,7 +1342,7 @@ h2 {
     background-color: #ffd748;
     border-radius: 10px;
     padding: 20px;
-    margin: 0 ;
+    margin: 0;
   }
 
   .pricing-cards-2 .service-name {
@@ -1452,11 +1461,16 @@ h2 {
 /*--------------------------------------------*/
 
 /*large desktop device*/
+
 @media screen and (min-width: 992px) {
+
+  * {
+    box-sizing: border-box;
+  }
 
   html {
     font-size: 18px;
-
+  }
 
     body {
       background-color: #dbeafe;
@@ -1502,11 +1516,11 @@ h2 {
     #hero-section {
       width: 100%;
       padding: 0;
-      margin: 0 10px;
+      margin: 0 auto;
     }
 
     #hero-container {
-      width: 100%;
+      max-width: 100%;
       display: flex;
       flex-direction: row;
     }
@@ -1514,6 +1528,7 @@ h2 {
     #hero-left-section {
       width: 50%;
       padding: 32px 20px 32px 20px;
+      
     }
 
     #contact-info {
@@ -1523,6 +1538,9 @@ h2 {
       line-height: 14px;
       color: black;
       margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      margin-right: 0;
     }
 
     .sub-heading {
@@ -1547,11 +1565,13 @@ h2 {
 
     #hero-right-section {
       width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
     }
 
     #hero-image {
-      margin-top: 120px;
-      width: 100%;
+      max-width: 100%;
       height: auto;
       border-radius: 10px;
     }
@@ -1560,14 +1580,14 @@ h2 {
       width: 100%;
       margin-top: 50px;
       margin-bottom: 50px;
-      margin: 0 10px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     #what-container {
-      max-width: 90%;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1616,47 +1636,47 @@ h2 {
     }
 
     .lower-section {
-      width: 100%;
+      max-width: 100%;
       display: flex;
       flex-direction: row;
     }
 
     .container-box {
-      width: 33.33%;
+      max-width: 33.33%;
+      margin: 0 10px;
     }
 
     .container-cards-1 {
       background-color: white;
       padding: 20px;
       border-radius: 10px;
-      margin: 0 10px;
+      
     }
 
     .container-cards-2 {
       background-color: white;
       padding: 20px;
       border-radius: 10px;
-      margin: 0 10px;
+      
     }
 
     .container-cards-3 {
       background-color: white;
       padding: 20px;
       border-radius: 10px;
-      margin: 0 10px;
     }
 
     #project-section {
       width: 100%;
-      margin: 50px 10px 0 10px;
-      padding: 0;
+      margin: 0 auto;
+      padding: 50px 0;
       align-items: center;
       display: flex;
       flex-direction: column;
     }
 
     #project-cont {
-      max-width: 90%;
+      max-width: 100%;
       align-items: center;
       display: flex;
       flex-direction: column;
@@ -1668,7 +1688,7 @@ h2 {
     }
 
     .project-lower-section {
-      width: 100%;
+      max-width: 100%;
     }
 
     #project-container {
@@ -1756,14 +1776,15 @@ h2 {
 
     #pricing-section {
       width: 100%;
-      margin-top: 50px 10px 50px 10px;
+      padding: 50px 0;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     #pricing-container {
-      max-width: 98%;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -1776,26 +1797,28 @@ h2 {
 
 
     #pricing-box-section {
+      max-width: 100%;
       display: flex;
       flex-direction: row;
     }
 
     .pricing-box {
-      width: 33.33%;
+      max-width: 33.33%;
+      margin: 0 10px;
     }
 
     .pricing-cards {
       background-color: white;
       border-radius: 10px;
       padding: 20px;
-      margin: 0 10px;
+      
     }
 
     .pricing-cards-2 {
       background-color: #ffd748;
       border-radius: 10px;
       padding: 20px;
-      margin: 0 10px;
+      
     }
 
     .pricing-cards-2 .service-name {
@@ -1828,7 +1851,7 @@ h2 {
       background-color: white;
       border-radius: 10px;
       padding: 20px;
-      margin: 0 10px;
+      
     }
 
     .service-name {
@@ -1902,7 +1925,7 @@ h2 {
       color: #ffffff;
       text-align: center;
       padding: 20px;
-      margin-top: 50px;
+      margin: 50px auto 0 auto;
       font-family: Poppins, Arial;
       font-size: 12px;
       font-weight: 500;
@@ -1911,8 +1934,481 @@ h2 {
 
   }
 
+
+
   /*extra large desktop device*/
-  @media screen and (min-width: 1200px) {}
+  @media screen and (min-width: 1200px) {
+
+    * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 18px;
+  }
+
+    body {
+      background-color: #dbeafe;
+      font-family: Inter, Arial;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 24px;
+      color: #434242;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-family: League Spartan, sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 40px;
+      color: #190d37;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-family: League Spartan, sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 40px;
+      color: #190d37;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+
+    .big-text {
+      color: #331e6a;
+      font-family: Poppins, Arial;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 32px;
+    }
+
+    #hero-section {
+      width: 100%;
+      padding: 0;
+      margin: 0 auto;
+    }
+
+    #hero-container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    #hero-left-section {
+      width: 50%;
+      padding: 32px 20px 32px 20px;
+      
+    }
+
+    #contact-info {
+      font-family: Inter, Arial;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      color: black;
+      margin-top: 0;
+      display: flex;
+      flex-direction: row;
+      margin-right: 0;
+    }
+
+    .sub-heading {
+      margin-top: 50px;
+      font-family: Inter, Arial;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 14px;
+    }
+
+    #contact {
+      background-color: #2f2f2f;
+      color: white;
+      height: 44px;
+      width: 138px;
+      border-radius: 5px;
+      font-family: Inter, Arial;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+    }
+
+    #hero-right-section {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+    }
+
+    #hero-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    #what-section {
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #what-container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .upper-section {
+      margin-bottom: 30px;
+      max-width: 80%;
+    }
+
+    .title {
+      font-family: Poppins, Arial;
+      font-weight: 600;
+      font-size: 12px;
+      text-align: center;
+      text-transform: uppercase;
+      color: blue;
+    }
+
+    .body-text {
+      color: #331e6a;
+      font-family: Poppins, Arial;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 32px;
+      text-align: center;
+    }
+
+    #box-title {
+      font-family: Poppins, Arial;
+      font-weight: 600;
+      font-size: 1.05rem;
+      text-align: center;
+      text-transform: uppercase;
+      color: black;
+      margin-bottom: 15px;
+    }
+
+    #box-text {
+      font-family: Inter, Arial;
+      font-weight: 400;
+      font-size: 0.95rem;
+      line-height: 24px;
+      text-align: center;
+      color: #331e6a;
+    }
+
+    .lower-section {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .container-box {
+      max-width: 33.33%;
+      margin: 0 10px;
+    }
+
+    .container-cards-1 {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      
+    }
+
+    .container-cards-2 {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      
+    }
+
+    .container-cards-3 {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #project-section {
+      width: 100%;
+      margin: 0 auto;
+      padding: 50px 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #project-cont {
+      max-width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-upper-section {
+      margin-bottom: 30px;
+      max-width: 80%;
+    }
+
+    .project-lower-section {
+      max-width: 100%;
+    }
+
+    #project-container {
+      width: 100%;
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    .project-thumbnail-1 {
+      display: flex;
+      background-color: #19ACFF;
+      min-width: 140px;
+      max-height: 140px;
+      font-family: Poppins;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 2.5rem;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    .project-thumbnail-2 {
+      display: flex;
+      background-color: #d6ec0c;
+      min-width: 140px;
+      max-height: 140px;
+      font-family: Poppins;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 2.5rem;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+
+    }
+
+    .project-thumbnail-3 {
+      display: flex;
+      background-color: #fe5118;
+      min-width: 140px;
+      max-height: 140px;
+      font-family: Poppins;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 2.5rem;
+      color: white;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+    }
+
+    #project-info {
+      padding-left: 40px;
+    }
+
+    .project-title {
+      font-family: Poppins;
+      font-weight: 700;
+      font-style: Bold;
+      font-size: 1rem;
+    }
+
+    .project-content {
+      font-family: Inter;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 0.95rem;
+      line-height: 24px;
+      color: #331e6a;
+      margin-top: 10px;
+    }
+
+    .project-link {
+      font-family: Inter;
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 14px;
+      color: #6A87A3;
+      margin-top: 7px;
+    }
+
+
+    #pricing-section {
+      width: 100%;
+      padding: 50px 0;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #pricing-container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pricing-upper-section {
+      margin-bottom: 30px;
+      max-width: 80%;
+    }
+
+
+    #pricing-box-section {
+      max-width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .pricing-box {
+      max-width: 33.33%;
+      margin: 0 10px;
+    }
+
+    .pricing-cards {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      
+    }
+
+    .pricing-cards-2 {
+      background-color: #ffd748;
+      border-radius: 10px;
+      padding: 20px;
+      
+    }
+
+    .pricing-cards-2 .service-name {
+      color: black;
+    }
+
+    .pricing-cards-2 .service-feature {
+      color: #000000bf;
+    }
+
+    .pricing-cards-2 .service-info {
+      color: #00000080;
+    }
+
+    .pricing-cards-2 .price-per {
+      color: #00000080;
+    }
+
+    .pricing-cards-2 .service-cta {
+      background-color: black;
+      color: white;
+    }
+
+    .pricing-cards-2 .service-cta:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .pricing-cards-3 {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      
+    }
+
+    .service-name {
+      font-size: Poppins, Arial;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #2858ff;
+    }
+
+    .service-amount {
+      font-family: Poppins, Arial;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 54px;
+      color: black;
+    }
+
+    .price-per {
+      font-family: Poppins, Arial;
+      font-size: 14px;
+      font-weight: 400;
+      color: #8a8a8a;
+    }
+
+    .service-info {
+      font-family: Poppins, Arial;
+      font-size: 14px;
+      font-weight: 400;
+      color: #484848;
+    }
+
+    .service-feature {
+      padding: 0;
+      list-style-type: none;
+
+    }
+
+    .service-feature li {
+      margin-bottom: 8px;
+      font-family: Poppins, Arial;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color-scheme: #666666;
+    }
+
+    .service-cta {
+      width: 100%;
+      padding: 12px;
+      border-style: solid 2px;
+      border-color: #121315;
+      background-color: white;
+      border-radius: 5px;
+      color: #2f2f2f;
+      font-family: Inter, Arial;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+    }
+
+    .service-cta:hover {
+      background-color: #121315;
+      color: white;
+      cursor: pointer;
+    }
+
+    #footer {
+      width: 100%;
+      background-color: #121315;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      margin: 50px auto 0 auto;
+      font-family: Poppins, Arial;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+    }
+
+
+  }
 
   /*
 html {
